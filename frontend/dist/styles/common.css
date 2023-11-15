@@ -1,0 +1,82 @@
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: rgba(5, 44, 101, 1);
+}
+
+.main-content {
+    position: absolute;
+    left: 16.66666667%;
+    padding: 100px 60px 60px;
+}
+
+.main_page {
+    padding: 100px 65px 100px 319px;
+}
+
+h1.title-page {
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.block-carts {
+    grid-gap: 20px;
+}
+
+.card-body {
+    border-radius: var(--bs-border-radius-lg);
+}
+
+.cart-item {
+    width: 352px;
+    height: 121px;
+    box-sizing: border-box;
+}
+
+.title-category {
+    font-size: 28px;
+    color: rgba(41, 6, 97, 1);
+    line-height: 32px;
+}
+
+.modal-content {
+    padding: 27px;
+
+}
+
+.modal-body {
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0 0 20px 0;
+}
+
+.modal-footer {
+    padding: 0;
+    border: none;
+}
+
+.btn-menu {
+    width: 55px;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    z-index: 100;
+}
+
+.btn-menu svg {
+    width: 100%;
+    height: auto;
+}
+
+.edit-input {
+    max-width: 397px;
+}
+
+
+@media (max-width: 357px) {
+    .table > :not(caption) > * > * {
+        padding: 4px;
+    }
+}

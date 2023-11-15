@@ -1,0 +1,32 @@
+<h1 class="title-page text-center text-xl-start">Главная</h1>
+
+<div class="tabs d-flex flex-wrap align-items-center justify-content-center justify-content-xl-start">
+    <button type="button" id="btnToday" class="tab btn btn-outline-secondary text-white btn-secondary" data-btn="day">
+        Сегодня
+    </button>
+    <button type="button" id="btnWeek" class="tab btn btn-outline-secondary" data-btn="week">Неделя</button>
+    <button type="button" id="btnMonth" class="tab btn btn-outline-secondary" data-btn="month">Месяц</button>
+    <button type="button" id="btnYear" class="tab btn btn-outline-secondary" data-btn="year">Год</button>
+    <button type="button" id="btnAll" class="tab btn btn-outline-secondary" data-btn="all">Все</button>
+    <button type="button" id="interval" class="tab btn btn-outline-secondary" data-btn="interval">Интервал</button>
+
+    <div id="choice-date">
+        <lable for="inputFrom">с</lable>
+        <input type="text" id="inputFrom" class="datepicker datepicker-after" data-position="top" placeholder="Дата"
+               readonly>
+
+        <label for="inputTo">по</label>
+        <input type="text" id="inputTo" class="datepicker datepicker-before" data-position="top" placeholder="Дата"
+               readonly>
+    </div>
+</div>
+
+
+<div class="diagram d-flex flex-wrap">
+    <div class="canvas diagram-income text-center">
+        <canvas class="" id="myChart-income"></canvas>
+    </div>
+    <div class="canvas diagram-expenses text-center">
+        <canvas class="" id="myChart-expenses"></canvas>
+    </div>
+</div>

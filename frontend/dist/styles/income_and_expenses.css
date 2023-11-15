@@ -1,0 +1,7 @@
+thead tr .th-title {
+    color: rgba(5, 44, 101, 1);
+}
+
+.btn-create {
+    grid-gap: 10px;
+}

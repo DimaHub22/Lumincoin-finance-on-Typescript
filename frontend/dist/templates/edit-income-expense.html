@@ -1,0 +1,39 @@
+<h1 id="createOptions" class="title-page text-center text-xl-start">Редактирование дохода/расхода</h1>
+
+
+<div class="select-options">
+    <div>
+        <select class="form-select mb-2" id="options">
+            <option class="option" value="income">Доход</option>
+            <option class="option" value="expense">Расход</option>
+        </select>
+    </div>
+    <div>
+        <select class="form-select mb-2" id="optionsChoice"></select>
+    </div>
+
+    <div>
+        <input type="text" class="form-control mb-2" id="optionSum" placeholder="Сумма в $...">
+        <div class="invalid-feedback">
+            Пожалуйста, введите сумму в текстовое поле.
+        </div>
+    </div>
+    <div>
+        <input type="text" class="form-control mb-2" id="optionDate" placeholder="Дата..." readonly>
+    </div>
+    <div>
+        <input type="text" class="form-control " id="optionComment" placeholder="Комментарий...">
+        <div class="invalid-feedback">
+            Пожалуйста, введите сообщение в текстовое поле.
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <a href="javascript:void(0);" id="saveIncome" class="me-2 btn-page btn btn-success" role="button">Сохранить</a>
+        <a href="#/income_and_expenses" id="cancelIncome" class="btn btn-danger" role="button">Отмена</a>
+    </div>
+
+
+</div>
+
+

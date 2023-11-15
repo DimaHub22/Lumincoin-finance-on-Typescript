@@ -1,0 +1,121 @@
+
+.tabs {
+    margin: 40px 0;
+    grid-gap: 20px;
+}
+
+.tabs .btn {
+    width: 100px;
+
+}
+
+.datepicker {
+    width: 80px;
+    border: none;
+}
+
+.datepicker::placeholder {
+    text-align: center;
+}
+
+.diagram {
+    margin-top: 140px;
+    grid-gap: 169px;
+}
+
+.diagram-income{
+    position: relative;
+}
+.diagram-income:before{
+    content: ' ';
+    position: absolute;
+    width: 450px;
+    border: 1px solid rgba(217, 217, 217, 1);
+    transform: rotate(90deg);
+    left: 297px;
+    top: 289px;
+}
+/*.diagram-income {*/
+/*    margin-right: 84px;*/
+/*}*/
+/*.diagram-expenses{*/
+/*    margin-left: 84px;*/
+/*}*/
+.canvas {
+    width: 437px;
+    height: 467px;
+}
+
+@media (max-width: 1372px) {
+    .diagram {
+        grid-gap: 41px;
+    }
+    .diagram-income:before{
+        left: 234px;
+    }
+}
+
+@media (max-width: 1241px) {
+    .diagram {
+        grid-gap: 0px;
+    }
+    .diagram-income:before {
+        left: 213px;
+    }
+}
+@media (max-width: 1199px) {
+    .diagram {
+       justify-content: center;
+    }
+
+}
+    @media (max-width: 1025px) {
+        .diagram {
+            grid-gap: 119px;
+
+        }
+        .diagram-income:before{
+
+            left:  274px;
+
+        }
+    }
+    @media (max-width: 1022px) {
+        .diagram-income:before{
+            transform: rotate(0);
+            left: 0;
+            top: 527px;
+        }
+    }
+    @media (max-width: 768px) {
+        .diagram {
+            margin-top: 60px;
+            justify-content: center;
+            grid-gap: 60px;
+        }
+        .diagram-income:before{
+
+            top: 490px;
+
+        }
+    }
+    @media (max-width: 584px) {
+        .diagram-income:before{
+            width: 290px;
+            left: 75px;
+
+        }
+    }
+    @media (max-width: 426px) {
+        .canvas {
+            width: 300px;
+            height: 300px;
+        }
+        .diagram-income:before{
+            top: 331px;
+            left: 5px;
+
+        }
+    }
+
+

@@ -1,0 +1,72 @@
+<div class="container signup">
+
+    <div class="logo text-center">
+        <img src="./images/logo.svg" alt="Логотип">
+    </div>
+
+    <h1 class="title-login text-center m-0">Создайте аккаунт</h1>
+    <div class="d-flex justify-content-center form_container">
+
+        <form class="form">
+            <div class="input-group mb-2 input-login">
+                <div class="input-group-append">
+                <span class="input-group-text border rounded-0 rounded-start h-100">
+                    <img src="./images/person.svg">
+                </span>
+                </div>
+                <label for="fullName"></label>
+                <input type="text" id="fullName" class="form-control input_user rounded-end" placeholder="ФИО" required>
+                <div class="invalid-feedback text-center">
+                    ФИО - может содержать русские буквы и пробелы. Каждое новое слово - с большой буквы.
+                </div>
+            </div>
+            <div class="input-group mb-2">
+                <div class="input-group-append">
+                <span class="input-group-text border rounded-0 rounded-start h-100">
+                    <img src="./images/mail.svg">
+                </span>
+                </div>
+                <label for="email"></label>
+                <input type="email" id="email" class="form-control input_user rounded-end"
+                       placeholder="Электронная почта" required>
+                <div class="invalid-feedback text-center">
+                    Пожалуйста, введите корректный email.
+                </div>
+            </div>
+            <div class="input-group mb-2">
+                <div class="input-group-append">
+                <span class="input-group-text border rounded-0 rounded-start h-100">
+                    <img src="./images/lock.svg">
+                </span>
+                </div>
+
+                <label for="password"></label>
+                <input type="password" id="password" class="form-control input_user rounded-end" placeholder="Пароль"
+                       required>
+                <div class="invalid-feedback text-center password">
+                    Пароль должен быть не менее 8 символов, содержать как минимум 1 букву в верхнем регистре и как
+                    минимум 1 цифру.
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-append">
+                <span class="input-group-text border rounded-0 rounded-start h-100">
+                    <img src="./images/lock.svg">
+                </span>
+                </div>
+                <label for="passwordRepeat"></label>
+                <input type="password" id="passwordRepeat" class="form-control input_user rounded-end"
+                       placeholder="Подтверждение пароля" required>
+                <div class="invalid-feedback text-center passwordRepeat">
+                    Пароль должен быть не менее 8 символов, содержать как минимум 1 букву в верхнем регистре и как
+                    минимум 1 цифру.
+                </div>
+            </div>
+
+
+            <button class="btn btn-primary w-100" type="button" id="btn-login" disabled>Войти</button>
+            <div class="enter-account">Уже есть аккаунт? <a href="#/">Войдите в систему</a></div>
+        </form>
+
+    </div>
+</div>

@@ -1,0 +1,63 @@
+<h1 class="title-page text-center text-xl-start">Доходы и расходы</h1>
+
+<div class="btn-create d-flex flex-wrap justify-content-center justify-content-md-start">
+    <a href="#/create-income-option" type="button" class="btn btn-success">Создать доход</a>
+    <a href="#/create-expense-option" type="button" class="btn btn-danger">Создать расход</a>
+</div>
+
+<div class="tabs d-flex flex-wrap align-items-center justify-content-center justify-content-xl-start">
+    <button type="button" id="btnToday" class="tab btn btn-outline-secondary text-white btn-secondary" data-btn="day">
+        Сегодня
+    </button>
+    <button type="button" id="btnWeek" class="tab btn btn-outline-secondary" data-btn="week">Неделя</button>
+    <button type="button" id="btnMonth" class="tab btn btn-outline-secondary" data-btn="month">Месяц</button>
+    <button type="button" id="btnYear" class="tab btn btn-outline-secondary" data-btn="year">Год</button>
+    <button type="button" id="btnAll" class="tab btn btn-outline-secondary" data-btn="all">Все</button>
+    <button type="button" id="interval" class="tab btn btn-outline-secondary" data-btn="interval">Интервал</button>
+
+    <div id="choice-date">
+        <lable for="inputFrom">с</lable>
+        <input type="text" id="inputFrom" class="datepicker datepicker-after" data-position="top" placeholder="Дата"
+               readonly>
+
+        <label for="inputTo">по</label>
+        <input type="text" id="inputTo" class="datepicker datepicker-before" data-position="top" placeholder="Дата"
+               readonly>
+    </div>
+</div>
+
+<table class="table w-100 table-hover">
+    <thead class="border-top">
+    <tr class="text-center">
+        <th scope="col" class="th-title d-none d-md-block">№ операции</th>
+        <th scope="col" class="th-title" data-bs-toggle="tooltip" data-bs-placement="top" title="Подсказка вверху">Тип
+        </th>
+        <th scope="col" class="th-title">Категория</th>
+        <th scope="col" class="th-title">Сумма</th>
+        <th scope="col" class="th-title">Дата</th>
+        <th scope="col" class="th-title d-none d-md-block">Комментарий</th>
+        <th scope="col"></th>
+
+    </tr>
+    </thead>
+    <tbody id="tbodyOperations">
+
+    </tbody>
+</table>
+
+
+<!-- Модальное окно -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog-centered modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                Вы действительно хотите удалить операцию?
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-success btn-delete" id="btn-delete">Да, удалить</button>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Не удалять</button>
+            </div>
+        </div>
+    </div>
+</div>

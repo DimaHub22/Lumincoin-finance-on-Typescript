@@ -1,0 +1,45 @@
+
+.signup {
+    padding-top: 281px;
+}
+
+.title-login {
+    font-size: 40px;
+    padding-top: 60px;
+    color: rgba(5, 44, 101, 1);
+}
+
+.form {
+    padding: 20px 0;
+    width: 397px;
+}
+
+.input_user {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(125, 111, 108);
+}
+
+.input_user::placeholder {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(108, 117, 125, 1);
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.create-account {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.create-account a {
+    color: rgba(13, 110, 253, 1);
+    text-decoration: underline;
+}
+
+.form-check-label {
+    font-size: 12px;
+}
